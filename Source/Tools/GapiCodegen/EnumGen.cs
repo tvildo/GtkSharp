@@ -56,6 +56,9 @@ namespace GtkSharp.Generation {
 			}
 			if (elem.HasAttribute ("enum_type"))
 				enum_type = " : " + elem.GetAttribute ("enum_type");
+			if(elem.GetAttribute("type") == "flags") {
+				enum_type = ": uint";
+			}
 		}
 
 		public override bool Validate ()

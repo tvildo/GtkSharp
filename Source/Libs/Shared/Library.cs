@@ -12,5 +12,18 @@ enum Library
     GdkPixbuf,
     Gtk,
     GtkSource,
-    Webkit
+    Webkit,
+    Gstreamer,
+    Gstapp,
+    Gstaudio,
+    Gstbase,
+    Gstcontroller,
+    Gstnet,
+    Gstpbutils,
+    Gstrtp,
+    Gstrtsp,
+    Gstsdp,
+    Gsttag,
+    Gstvideo,
+    Gstwebrtc
 }

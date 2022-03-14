@@ -43,6 +43,11 @@ class Settings
             {
                 Deps = new[] { "GtkSharp","GLibSharp", "GioSharp", "AtkSharp", "CairoSharp", "PangoSharp", "GdkSharp" },
                 ExtraArgs = "--abi-cs-usings=Webkit,Gtk,GLib,Gdk,Atk,Pango,Cairo"
+            },
+            new GAssembly("GstSharp")
+            {
+                Deps = new[] {"GLibSharp", "GioSharp"},
+                ExtraArgs = $"--abi-cs-usings=Gst,Gst.Video,Gst.Sdp,Gst.Tags,Gst.Rtsp,Gst.PbUtils,Gst.Net,Gst.Controller,Gst.Base,Gst.Audio,Gst.App --glue-includes=glib.h,gst/gst.h,gst/video/video.h,gst/audio/audio.h,gst/rtsp/rtsp.h,gst/app/app.h,gst/audio/audio.h,gst/base/base.h,gst/controller/controller.h,gst/fft/fft.h,gst/net/net.h,gst/pbutils/gstaudiovisualizer.h,gst/pbutils/pbutils.h,gst/rtp/rtp.h,gst/rtsp/rtsp.h,gst/sdp/sdp.h,gst/tag/tag.h,gst/video/video.h,gst/video/gstvideoaffinetransformationmeta.h,gst/net/gstnetcontrolmessagemeta.h,gst/webrtc/webrtc.h --abi-c-filename=Source/Libs/GstSharp/Generated/GstSharp-abi.c --abi-cs-filename=Source/Libs/GstSharp/Generated/GstSharp-abi.cs"
             }
         };
     }

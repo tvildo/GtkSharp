@@ -32,6 +32,19 @@ class GLibrary
 		_libraryDefinitions[Library.PangoCairo] = new[] {"libpangocairo-1.0-0.dll", "libpangocairo-1.0.so.0", "libpangocairo-1.0.0.dylib", "pangocairo-1.dll"};
 		_libraryDefinitions[Library.GtkSource] = new[] {"libgtksourceview-4-0.dll", "libgtksourceview-4.so.0", "libgtksourceview-4.0.dylib", "gtksourceview-4.dll"};
         _libraryDefinitions[Library.Webkit] = new[] { "libwebkit2gtk-4.0.dll", "libwebkit2gtk-4.0.so.37", "libwebkit2gtk-4.0.dylib", "libwebkit2gtk-4.0.0.dll" };
+        _libraryDefinitions[Library.Gstreamer] = new[] { "libgstreamer-1.0-0.dll", "libgstreamer-1.0.so.0", "libgstreamer-1.0.dylib" };
+		_libraryDefinitions[Library.Gstapp] = new[] { "libgstapp-1.0-0.dll", "libgstapp-1.0.so.0", "libgstapp-1.0.dylib" };
+		_libraryDefinitions[Library.Gstaudio] = new[] { "libgstaudio-1.0-0.dll", "libgstaudio-1.0.so.0", "libgstaudio-1.0.dylib" };
+		_libraryDefinitions[Library.Gstbase] = new[] { "libgstbase-1.0-0.dll", "libgstbase-1.0.so.0", "libgstbase-1.0.dylib" };
+		_libraryDefinitions[Library.Gstcontroller] = new[] { "libgstcontroller-1.0-0.dll", "libgstcontroller-1.0.so.0", "libgstcontroller-1.0.dylib" };
+		_libraryDefinitions[Library.Gstnet] = new[] { "libgstnet-1.0-0.dll", "libgstnet-1.0.so.0", "libgstnet-1.0.dylib" };
+		_libraryDefinitions[Library.Gstpbutils] = new[] { "libgstpbutils-1.0-0.dll", "libgstpbutils-1.0.so.0", "libgstpbutils-1.0.dylib" };
+		_libraryDefinitions[Library.Gstrtp] = new[] { "libgstrtp-1.0-0.dll", "libgstrtp-1.0.so.0", "libgstrtp-1.0.dylib" };
+		_libraryDefinitions[Library.Gstrtsp] = new[] { "libgstrtsp-1.0-0.dll", "libgstrtsp-1.0.so.0", "libgstrtsp-1.0.dylib" };
+		_libraryDefinitions[Library.Gstsdp] = new[] { "libgstsdp-1.0-0.dll", "libgstsdp-1.0.so.0", "libgstsdp-1.0.dylib" };
+		_libraryDefinitions[Library.Gsttag] = new[] { "libgsttag-1.0-0.dll", "libgsttag-1.0.so.0", "libgsttag-1.0.dylib" };
+		_libraryDefinitions[Library.Gstvideo] = new[] { "libgstvideo-1.0-0.dll", "libgstvideo-1.0.so.0", "libgstvideo-1.0.dylib" };
+		_libraryDefinitions[Library.Gstwebrtc] = new[] { "libgstwebrtc-1.0-0.dll", "libgstwebrtc-1.0.so.0", "libgstwebrtc-1.0.dylib" };
 	}
 
 	public static IntPtr Load(Library library)
